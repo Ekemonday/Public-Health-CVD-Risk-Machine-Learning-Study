@@ -138,19 +138,19 @@ def main():
     logger.info("\n" + "=" * 60)
     logger.info("FINAL MODEL LEADERBOARD")
     logger.info("=" * 60)
-    logger.info("\n📊 REGRESSION — CVD Risk Score")
+    logger.info("\n REGRESSION — CVD Risk Score")
     logger.info(f"  {'Model':<30} {'R²':>8} {'RMSE':>8} {'MAE':>8}")
     logger.info(f"  {'-'*56}")
     for name, m in regression_results.items():
         logger.info(f"  {name:<30} {m['R2']:>8.4f} {m['RMSE']:>8.4f} {m['MAE']:>8.4f}")
 
-    logger.info("\n🏥 CLASSIFICATION — 30-Day Hospitalization")
+    logger.info("\n CLASSIFICATION — 30-Day Hospitalization")
     logger.info(f"  {'Model':<30} {'AUC':>8} {'F1':>8} {'Acc':>8}")
     logger.info(f"  {'-'*56}")
     for name, m in classification_results.items():
         logger.info(f"  {name:<30} {str(m['AUC']):>8} {m['F1']:>8.4f} {m['Accuracy']:>8.4f}")
 
-    logger.info("\n✅ Pipeline complete. Check reports/ for plots & models_saved/ for artifacts.")
+    logger.info("\n Pipeline complete. Check reports/ for plots & models_saved/ for artifacts.")
     return summary
 
 
