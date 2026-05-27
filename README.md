@@ -1,7 +1,7 @@
 #  Public Health CVD Risk — Machine Learning Study
 
 **Study:** Cardiovascular Disease Risk Score Prediction & 30-Day Hospitalization Classification  
-**Dataset:** 2,000 synthetic patient records · 39 features · two prediction targets  
+**Dataset:** 2,000 patient records · 39 features · two prediction targets  
 **Models:** Ridge Regression · Lasso Regression · Logistic Regression · XGBoost (×2)
 
 ---
