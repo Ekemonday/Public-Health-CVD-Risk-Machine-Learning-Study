@@ -1,0 +1,14 @@
+2026-05-26 18:54:24,366 | INFO | ============================================================
+2026-05-26 18:54:24,367 | INFO | PUBLIC HEALTH ML STUDY — PIPELINE START
+2026-05-26 18:54:24,368 | INFO | ============================================================
+2026-05-26 18:54:24,368 | INFO | Step 1: Loading and preprocessing data...
+2026-05-26 18:54:24,552 | INFO | Processed dataset shape: (2000, 48)
+2026-05-26 18:54:24,552 | INFO | Step 2: Generating EDA visualizations...
+2026-05-26 18:54:25,706 | INFO | Step 3: Splitting data...
+2026-05-26 18:54:25,717 | INFO | Step 4: Scaling features...
+2026-05-26 18:54:25,735 | INFO | 
+==================================================
+2026-05-26 18:54:25,735 | INFO | TASK A: Regression — CVD Risk Score Prediction
+2026-05-26 18:54:25,735 | INFO | ==================================================
+2026-05-26 18:54:25,735 | INFO | 
+[A1] Ridge Regression

@@ -1,0 +1,41 @@
+{
+  "study": "CVD Risk & Hospitalization Prediction",
+  "dataset_rows": 2000,
+  "features": 46,
+  "regression_results": {
+    "Ridge Regression": {
+      "MAE": 1.7155,
+      "RMSE": 2.1306,
+      "R2": 0.8779,
+      "MAPE": 10.6705
+    },
+    "Lasso Regression": {
+      "MAE": 1.6801,
+      "RMSE": 2.0903,
+      "R2": 0.8825,
+      "MAPE": 10.7972
+    },
+    "XGBoost Regressor": {
+      "MAE": 1.9119,
+      "RMSE": 2.3507,
+      "R2": 0.8514,
+      "MAPE": 12.6896
+    }
+  },
+  "classification_results": {
+    "Logistic Regression": {
+      "Accuracy": "0.7225",
+      "Precision": "0.5266",
+      "Recall": "0.7417",
+      "F1": "0.6159",
+      "AUC": "0.7976"
+    },
+    "XGBoost Classifier": {
+      "Accuracy": "0.7475",
+      "Precision": "0.5748",
+      "Recall": "0.6083",
+      "F1": "0.5911",
+      "AUC": "0.8094"
+    }
+  }
+}

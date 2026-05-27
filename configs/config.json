@@ -1,0 +1,54 @@
+{
+  "study": "Cardiovascular Disease Risk & 30-Day Hospitalization Prediction",
+  "dataset": "data/raw/public_health_dataset.csv",
+  "random_state": 42,
+  "test_size": 0.2,
+  "val_size": 0.1,
+
+  "regression": {
+    "target": "cvd_risk_score",
+    "models": {
+      "ridge": { "alpha": 1.0 },
+      "lasso": { "alpha": 0.1 },
+      "xgboost": {
+        "n_estimators": 300,
+        "max_depth": 6,
+        "learning_rate": 0.05,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "min_child_weight": 3,
+        "gamma": 0.1,
+        "reg_alpha": 0.1,
+        "reg_lambda": 1.0
+      }
+    }
+  },
+
+  "classification": {
+    "target": "hospitalized_30days",
+    "models": {
+      "logistic": { "C": 1.0, "max_iter": 1000 },
+      "xgboost": {
+        "n_estimators": 300,
+        "max_depth": 5,
+        "learning_rate": 0.05,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "min_child_weight": 3,
+        "scale_pos_weight": 2.3
+      }
+    }
+  },
+
+  "tuning": {
+    "enabled": true,
+    "method": "random",
+    "cv_folds": 5
+  },
+
+  "output": {
+    "models_dir": "models_saved",
+    "reports_dir": "reports",
+    "predictions_csv": "reports/batch_predictions.csv"
+  }
+}

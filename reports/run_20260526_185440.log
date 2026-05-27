@@ -1,0 +1,48 @@
+2026-05-26 18:54:40,522 | INFO | ============================================================
+2026-05-26 18:54:40,523 | INFO | PUBLIC HEALTH ML STUDY — PIPELINE START
+2026-05-26 18:54:40,523 | INFO | ============================================================
+2026-05-26 18:54:40,523 | INFO | Step 1: Loading and preprocessing data...
+2026-05-26 18:54:40,553 | INFO | Processed dataset shape: (2000, 48)
+2026-05-26 18:54:40,553 | INFO | Step 2: Generating EDA visualizations...
+2026-05-26 18:54:41,543 | INFO | Step 3: Splitting data...
+2026-05-26 18:54:41,553 | INFO | Step 4: Scaling features...
+2026-05-26 18:54:41,583 | INFO | 
+==================================================
+2026-05-26 18:54:41,583 | INFO | TASK A: Regression — CVD Risk Score Prediction
+2026-05-26 18:54:41,583 | INFO | ==================================================
+2026-05-26 18:54:41,584 | INFO | 
+[A1] Ridge Regression
+2026-05-26 18:54:42,183 | INFO | 
+[A2] Lasso Regression
+2026-05-26 18:54:42,816 | INFO | 
+[A3] XGBoost Regressor
+2026-05-26 18:54:44,153 | INFO | 
+==================================================
+2026-05-26 18:54:44,153 | INFO | TASK B: Classification — 30-Day Hospitalization
+2026-05-26 18:54:44,153 | INFO | ==================================================
+2026-05-26 18:54:44,153 | INFO | 
+[B1] Logistic Regression
+2026-05-26 18:54:44,868 | INFO | 
+[B2] XGBoost Classifier
+2026-05-26 18:54:45,958 | INFO | 
+Step 5: Model comparison plots...
+2026-05-26 18:54:46,216 | INFO | Step 6: Saving results summary...
+2026-05-26 18:54:46,217 | INFO | 
+============================================================
+2026-05-26 18:54:46,217 | INFO | FINAL MODEL LEADERBOARD
+2026-05-26 18:54:46,217 | INFO | ============================================================
+2026-05-26 18:54:46,217 | INFO | 
+📊 REGRESSION — CVD Risk Score
+2026-05-26 18:54:46,218 | INFO |   Model                                R²     RMSE      MAE
+2026-05-26 18:54:46,218 | INFO |   --------------------------------------------------------
+2026-05-26 18:54:46,218 | INFO |   Ridge Regression                 0.8779   2.1307   1.7157
+2026-05-26 18:54:46,218 | INFO |   Lasso Regression                 0.8825   2.0903   1.6804
+2026-05-26 18:54:46,218 | INFO |   XGBoost Regressor                0.8477   2.3800   1.9249
+2026-05-26 18:54:46,218 | INFO | 
+🏥 CLASSIFICATION — 30-Day Hospitalization
+2026-05-26 18:54:46,218 | INFO |   Model                               AUC       F1      Acc
+2026-05-26 18:54:46,218 | INFO |   --------------------------------------------------------
+2026-05-26 18:54:46,218 | INFO |   Logistic Regression              0.7978   0.6159   0.7225
+2026-05-26 18:54:46,218 | INFO |   XGBoost Classifier               0.8158   0.5984   0.7450
+2026-05-26 18:54:46,218 | INFO | 
+✅ Pipeline complete. Check reports/ for plots & models_saved/ for artifacts.
